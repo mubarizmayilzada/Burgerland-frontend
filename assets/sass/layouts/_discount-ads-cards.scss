@@ -1,0 +1,93 @@
+.discount-ads-cards{
+    margin: 120px 0;
+    display: flex;
+    justify-content: space-evenly;
+    .discount-ads-card{
+        border: 1px solid #ffbb004b;
+        width: 575px;
+        // height: 280px;
+        border-radius: 11px;
+        background-color: rgb(23, 23, 23);
+        display: flex;
+        align-items: center;
+        &:not(:last-child){
+            margin-right: 15px;
+        }
+        .discount-ads-description{
+            padding: 30px 0 30px 30px;
+            width: 60%;
+            h2{
+                color: white;
+                font-size: 28px;
+                font-weight: 700;
+                line-height: 24px;
+                margin-bottom: 15px;
+            }
+            p{
+                color: rgb(192, 192, 192);
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 400;
+                margin-bottom: 15px;
+            }
+            a{
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 400;
+                color: #FFBA00;
+            }
+        }
+        .discount-ads-img{
+            width: 40%;
+            padding: 30px 30px 30px 0;
+            img{
+                width: 100%;
+                &:hover{
+                    animation: floatThings 2s linear infinite;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .discount-ads-cards{
+        display: block;
+        .discount-ads-card{
+            width: 100% !important;
+            &:not(:last-child){
+                margin-bottom: 20px;
+            }
+            .discount-ads-img{
+                img{
+                    width: 90% !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .discount-ads-cards{
+        display: block;
+        .discount-ads-card{
+            display: block !important;
+            width: 100% !important;
+            &:not(:last-child){
+                margin-bottom: 35px;
+            }
+            .discount-ads-description{
+                width: 100% !important;
+                padding: 20px !important;
+            }
+            .discount-ads-img{
+                width: 100% !important;
+                text-align: center;
+                padding: 20px !important;
+                img{
+                    width: 40% !important;
+                }
+            }
+        }
+    }
+}

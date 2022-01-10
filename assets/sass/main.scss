@@ -1,0 +1,26 @@
+@import './base/reset';
+@import './base/animation';
+
+@import './layouts/header';
+@import './layouts/main-home';
+@import './layouts/discount-ads-cards';
+@import './layouts/mini-information';
+@import './layouts/products';
+@import './layouts/mobile-app';
+@import './layouts/customer-review';
+@import './layouts/news-overview';
+@import './layouts/subscribe';
+@import './layouts/footer';
+
+@import './components/buttons';
+@import './components/card-title';
+@import './components/section-title';
+@import './components/filter-buttons';
+
+@import './pages/home';
+@import './pages/aboutUs';
+@import './pages/menu';
+@import './pages/faq';
+@import './pages/news';
+@import './pages/news-details';
+@import './pages/contact-us';
